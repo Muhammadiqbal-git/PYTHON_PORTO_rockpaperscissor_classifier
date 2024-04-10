@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Inference
+        </title>
+    </head>
+    <body>
+        <h1>
+            Rock Paper Scissor
+        </h1>
+        <form action="/predict", method="post", enctype="multipart/form-data">
+            <input type="file", name="img">
+            <input type="submit", value="predict the images">
+        </form>
+        {% if output %}
+        <h3> {{fname}} Image is a {{output}}</h3>
+        {% endif %}
+    </body>
+</html>
